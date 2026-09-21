@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #0f1b2e;
+  --color-ink-soft: #16273f;
+  --color-ink-line: #24354f;
+  --color-paper: #f7f5f0;
+  --color-paper-soft: #efece4;
+  --color-paper-line: #ddd8cc;
+  --color-slate: #1c2531;
+  --color-amber: #e8a33d;
+  --color-amber-soft: #f2c179;
+  --color-teal: #3e9c9c;
+  --color-teal-soft: #6bb8b8;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-slate);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark body {
+  background-color: var(--color-ink);
+  color: #e7e4db;
+}
+
+::selection {
+  background-color: var(--color-amber);
+  color: var(--color-ink);
+}
+
+/* focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* thin scrollbar for horizontal filter row */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* blueprint grid texture used behind hero */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line, rgba(255,255,255,0.05)) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line, rgba(255,255,255,0.05)) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
