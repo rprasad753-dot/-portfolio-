@@ -5,7 +5,7 @@ export default function Journey() {
     <section id="journey" className="py-20 sm:py-28 border-t border-paper-line dark:border-ink-line">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-slate dark:text-paper">
-          Data Science Journey
+          AI / Data Science Journey
         </h2>
         <p className="mt-3 text-sm text-slate/60 dark:text-paper/55 max-w-md">
           The actual sequence, in order — no step skipped or embellished.

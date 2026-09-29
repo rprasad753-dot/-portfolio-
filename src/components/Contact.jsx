@@ -21,8 +21,8 @@ export default function Contact() {
             Contact
           </h2>
           <p className="mt-3 text-sm text-slate/60 dark:text-paper/55 max-w-sm leading-relaxed">
-            Open to entry-level Data Science opportunities, internship
-            extensions, and collaboration on applied machine learning projects.
+            Open to entry-level Data Science and AI opportunities, internship
+            extensions, and collaboration on applied ML / GenAI projects.
           </p>
 
           <div className="mt-8 space-y-4">

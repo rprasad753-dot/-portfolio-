@@ -9,7 +9,7 @@ export default function About() {
             About
           </h2>
           <p className="mt-3 text-sm text-slate/60 dark:text-paper/55 max-w-xs">
-            A Mechanical Engineer's honest first steps into Data Science.
+            A Mechanical Engineer's honest first steps into AI and Data Science.
           </p>
 
           <dl className="mt-8 space-y-5">

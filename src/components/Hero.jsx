@@ -5,7 +5,7 @@ import { profile } from "../data/content";
 
 const PIPELINE = [
   { label: "Mechanical Engineering", note: "2013 – 2017" },
-  { label: "Data Science Training", note: "2025" },
+  { label: "AI & ML Training", note: "2025" },
   { label: "Data Science Internship", note: "2026" },
   { label: "Applied Projects", note: "Ongoing" },
 ];
